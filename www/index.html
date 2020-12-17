@@ -1,0 +1,19 @@
+<!DOCTYPE html> <html> <head> <meta charset=utf-8> <meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"> <meta http-equiv=Content-Security-Policy content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'"> <script type=text/javascript src=components/loader.js></script> <link rel=stylesheet type=text/css href=components/loader.css> <script src=https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js></script> <script src=https://www.gstatic.com/firebasejs/8.1.1/firebase-firestore.js></script> <script> var firestore;
+var onDeviceReady = function () {
+var firebaseConfig = {
+    apiKey: "AIzaSyAq2kB-qZyWpn47HwtitQaIKfqCG69q7rU",
+    authDomain: "monaca-f014c.firebaseapp.com",
+    projectId: "monaca-f014c",
+    storageBucket: "monaca-f014c.appspot.com",
+    messagingSenderId: "1020671170172",
+    appId: "1:1020671170172:web:bfca5d8b7fcfebb56a9bf9"
+  };
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+firestore = firebase.firestore();
+};
+document.addEventListener(
+window.cordova ? "deviceready" : "DOMContentLoaded",
+onDeviceReady,
+false
+); </script> <link href=vendors~app.css rel=stylesheet></head> <body> <div id=app></div> <script type=text/javascript src=runtime~app.js></script><script type=text/javascript src=vendors~app.js></script><script type=text/javascript src=app.js></script></body> </html> 
